@@ -1,0 +1,14 @@
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.button{
+    letter-spacing: 4.32px;
+    min-width: 275px;
+    &.hollow{
+        letter-spacing: 2.4px;
+        border-radius: 14px;
+        min-width: auto;
+    }
+}
