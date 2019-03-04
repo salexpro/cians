@@ -1,0 +1,40 @@
+footer.grid-container.footer
+    +menu(['--lines', '--footer'], [{
+        content: 'CAREERS',
+        link: '#'
+    },
+    {
+        content: 'PRIVACY POLICY',
+        link: '#'
+    },
+    {
+        content: 'CLIENT LOGIN',
+        link: '#'
+    }])
+    .grid-x.medium-up-3.footer_inner
+        .cell.footer_cell
+            h4.footer_header
+                | DOWNLOAD SAMPLES
+            form.form.form--email(action="")
+                input(type="email" placeholder="Email address..." required)
+                button.form_button
+                    +icon('arrow', [7, 10])
+        .cell.footer_cell
+            h4.footer_header
+                | SPEAK WITH US
+            p.small Set up an appointment to speak with us.
+            a.button.small(href="#")
+                | MAKE AN APPOINTMENT
+        .cell.footer_cell
+            p
+                | 750 Lexington Avenue, Floor 6 
+                br
+                | New York, NY 10022
+            p
+                b EMAIL
+                | 
+                a(href="mailto:info@ciansanalytics.com" target="_blank") info@ciansanalytics.com
+                br
+                b CALL
+                | 
+                a(href="tel: 212.796.4067") 212.796.4067 

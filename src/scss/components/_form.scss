@@ -1,0 +1,36 @@
+.form{
+    &--email{
+        width: 100%;
+        max-width: 265px;
+        position: relative;
+        input{
+            margin: 0;
+            font-size: 15px;
+            height: auto;
+            padding: 0.44em 2em 0.44em 0;
+            background: none;
+            border-bottom: 1px solid rgba($secondary-color, 0.4);
+            &:focus{
+                background: none;
+                border-bottom: 1px solid $secondary-color;
+            }
+        }
+    }
+    &_button{
+        position: absolute;
+        right: 0;
+        top: calc(50% - 11px);
+        background-color: rgba($secondary-color, 0.4);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2px;
+        &:hover{
+            background-color: $secondary-color;
+            transition: 0.25s ease-in-out;
+        }
+    }
+}

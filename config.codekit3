@@ -242,6 +242,16 @@
 		"oAP": "/build/assets/img/.gitkeep",
 		"oF": 0
 		},
+	"/src/assets/img/arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/arrow.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
 	"/src/assets/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -457,6 +467,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_form.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_header.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -509,6 +532,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -534,6 +570,32 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_info.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_info.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_reviews.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_reviews.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -546,7 +608,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548730532
+	"lastBuiltDate": 573415866.40541196
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

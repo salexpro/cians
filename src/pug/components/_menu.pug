@@ -1,0 +1,38 @@
+mixin menu(mod, data)
+    -
+        const menu = data ? data : [
+            {
+                content: 'WHO WE ARE',
+                link: '#'
+            },
+            {
+                content: 'WHAT WE DO',
+                link: '#'
+            },
+            {
+                content: '<img src="./assets/img/logo.svg" alt="Cians">',
+                link: '/',
+                attrs: {
+                    'class': 'header_logo'
+                }
+            },
+            {
+                content: 'CONTACT US',
+                link: '#'
+            },
+            {
+                content: 'CLIENT LOGIN',
+                tag: 'button',
+                attrs: {
+                    'class': 'button secondary hollow tiny',
+                    'data-open': 'popup_login'
+                }
+            }
+        ]
+    ul.menu&attributes(attributes, {
+        'class': mod ? mod.map(cls => cls.startsWith('--') ? `menu${cls}` : cls) : false
+    })
+        each item in menu
+            li(class=item.hasOwnProperty('state') ? item.state : false)
+                #{item.hasOwnProperty('tag') ? item.tag : 'a'}(href=item.link)&attributes(item.attrs)
+                    !=item.content

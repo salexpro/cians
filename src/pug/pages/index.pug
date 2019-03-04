@@ -1,0 +1,36 @@
+extends ../_layout
+block const
+    -
+        const page = 'main'
+        const name = 'Home'
+
+block content
+    include ../sections/_reviews
+
+    +3col([{
+        title: 'MISSION',
+        descr: `Cians Analytics provides high-
+                quality, cost-efective research and 
+                analytical support to investment 
+                banks, private equity funds, corpo-
+                rates, and portfolio companies ... `,
+        link: '#'
+    },
+    {
+        title: 'WHO WE ARE',
+        descr: `Our team has pooled together a very 
+                strong set of individuals in their 
+                respective felds, and recruited 
+                primarily from top universities and 
+                professional services institutions ...`,
+        link: '#'
+    },
+    {
+        title: 'WHAT WE DO',
+        descr: `Our value proposition lies in the 
+                fexibility of our engagement model, 
+                allowing clients to have complete 
+                control, while ultimately lowering 
+                costs. Lorem ipsum ...`,
+        link: '#'
+    }])(class="info--gray")

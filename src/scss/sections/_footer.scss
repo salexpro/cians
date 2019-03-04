@@ -1,3 +1,37 @@
 .footer{
-    margin-top: auto;
+    margin-top: 50px;
+    &_inner{
+        max-width: 930px;
+        margin: auto;
+    }
+    &_cell{
+        padding-top: 40px;
+        padding-bottom: 48px;
+        text-align: center;
+        color: $secondary-color;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .small:not(.button){
+            font-size: 13px;
+            margin-bottom: auto;
+        }
+        b{
+            font-family: $header-font-family;
+            letter-spacing: 3px;
+            font-size: 12px;
+            color: $primary-color;
+        }
+        a:not(.button){
+            color: $secondary-color;
+        }
+        p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
 }

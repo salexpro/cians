@@ -1,0 +1,33 @@
+.info{
+    &--gray{
+        padding-top: 51px;
+        padding-bottom: 74px;
+        background-color: $light-gray;
+    }
+    &_inner{
+        max-width: 960px;
+    }
+    &_item{
+        &_icon{
+            border-radius: 50%;
+            display: table;
+            margin: auto;
+            overflow: hidden;
+            margin-bottom: 18px;
+        }
+        &_title{
+            text-align: center;
+            // margin-bottom: 9px;
+        }
+        &_descr{
+            letter-spacing: 0.51px;
+            color: $dark-gray;
+            margin-bottom: 20px;
+        }
+        &_more{
+            font-size: 12px;
+            font-family: $header-font-family;
+            letter-spacing: 3px;
+        }
+    }
+}

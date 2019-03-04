@@ -34,10 +34,62 @@ html, body{
     min-height: 100vh;
 }
 
+%linkline{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    background: currentColor;
+    width: 0;
+}
+
 a{
     transition: 200ms;
+    position: relative;
+    &:not(:only-child){
+        &::before{
+            @extend %linkline;
+            left: -1px;
+        }
+        &::after{
+            @extend %linkline;
+            right: -1px;
+            transition: 250ms;
+            transition-delay: 0;
+        }
+        &:hover{
+            &::before{
+                transition: 250ms;
+                width: calc(100% + 1px);
+            }
+            &::after{
+                width: calc(100% + 1px);
+                transition-delay: 250ms;
+            }
+        }
+    }
 }
 
 .js-off-canvas-overlay{
     -webkit-tap-highlight-color: transparent;
+}
+
+blockquote{
+    font-size: 32px;
+    letter-spacing: 0.16px;
+    // line-height: 1.35;
+    margin: 0;
+    cite{
+        margin-top: 27px;
+        font-family: $header-font-family;
+        font-style: normal;
+        letter-spacing: 2.75px;
+        b{
+            display: block;
+            font-size: 14px;
+            letter-spacing: 3.49px;
+            color: $primary-color;
+            font-weight: normal;
+        }
+    }
 }

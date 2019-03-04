@@ -11,4 +11,10 @@ button {
         border-radius: 14px;
         min-width: auto;
     }
+    &.small{
+        letter-spacing: 3.14px;
+        min-width: 230px;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
 }
