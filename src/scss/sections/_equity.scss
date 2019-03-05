@@ -1,0 +1,16 @@
+.equity{
+    padding: 80px 0;
+    background-color: rgba($light-gray, 0.8);
+    &_inner{
+        max-width: 980px;
+    }
+    &_descr{
+        color: $dark-gray;
+        letter-spacing: 0.51px;
+    }
+    &_more{
+        font-family: $header-font-family;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+}

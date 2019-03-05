@@ -1,0 +1,9 @@
+.mock{
+    max-width: 980px;
+    padding-top: 84px;
+    padding-bottom: 70px;
+    &_content{
+        color: $dark-gray;
+        letter-spacing: 0.51px;
+    }
+}

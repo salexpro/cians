@@ -1,0 +1,38 @@
+extends ../_layout
+block const
+    -
+        const page = 'what'
+        const name = 'What We Do'
+
+block content
+    +lead({
+        header: 'WHAT WE DO',
+        lead: 'Working with Cians Analytics allows your organi&shy;zation to free up junior-level associates for more strategic tasks, enabling you to get the most out of your staf while ensuring...'
+    })
+
+    +3col([
+        {
+            title: 'INVESTMENT BANKING',
+            descr: 'Increase deal fow and spend facetime with key stakeholders without sacrifc&shy;ing quality.'
+        },
+        {
+            title: 'PRIVATE EQUITY',
+            descr: 'Allow our teams to help you fnd the companies to invest in, evaluate new industries and deals quicker and do things more efciently so you can focus on transactions.'
+        },
+        {
+            title: 'HEDGE FUNDS',
+            descr: 'Get instant access to deep dive analy&shy;sis expertise for your specifc interest and requirements for any industry or vertical.'
+        }
+    ])
+
+    +quote({
+        header: 'WORKING WITH CIANS',
+        content: {
+            quote: '“With the Cians teams I am able to provide my MD\'s and junior bankers extra capacity to better cover their companies, market to them, and execute deals, without worrying about bandwidth.”',
+            cite: '<b>C-LEVEL EXECUTIVE</b>BULGE BRACKET INVESTMENT BANK'
+        }
+    })
+
+    include ../sections/_mock
+    include ../sections/_equity
+    

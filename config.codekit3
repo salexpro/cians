@@ -648,6 +648,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/what.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/what.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/who.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -665,6 +675,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_3col.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_equity.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_equity.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -695,6 +715,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_leader.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_mock.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_mock.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -871,6 +901,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_equity.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_equity.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -919,6 +962,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_leader.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_mock.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_mock.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -973,7 +1029,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 573499368.27607405
+	"lastBuiltDate": 573503303.46756196
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

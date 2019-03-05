@@ -151,7 +151,7 @@ $header-styles: (
     'h3': ('fs': 16, 'mb': 9),
     'h4': ('fs': 14, 'mb': 4),
     'h5': ('fs': 20),
-    'h6': ('fs': 16),
+    'h6': ('fs': 14),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -182,7 +182,7 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $black;
+$blockquote-color: inherit;
 $blockquote-padding: rem-calc(0 5 0 0);
 $blockquote-border: none;
 $cite-font-size: rem-calc(11);

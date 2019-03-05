@@ -14,6 +14,6 @@ mixin quote(data)
                             =data.content
                     else
                         blockquote
-                            =data.quote
+                            =data.content.quote
                             cite
-                            !=data.cite
+                                !=data.content.cite
