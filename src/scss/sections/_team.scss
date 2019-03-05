@@ -1,0 +1,22 @@
+.team{
+    padding-top: 78px;
+    padding-bottom: 40px;
+    background-color: rgba($light-gray, 0.8);
+    &_inner{
+        max-width: 980px;
+    }
+    &_header{
+        color: $primary-color;
+        margin-bottom: 34px;
+    }
+    &_person{
+        margin-bottom: 50px;
+        &_position{
+            font-size: 18px;
+        }
+        &_roles{
+            color: $dark-gray;
+            margin-top: 16px;
+        }
+    }
+}

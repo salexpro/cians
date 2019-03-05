@@ -1,7 +1,8 @@
 .footer{
-    margin-top: 50px;
+    margin-top: auto;
+    padding-top: 50px;
     &_inner{
-        max-width: 930px;
+        max-width: 950px;
         margin: auto;
     }
     &_cell{
@@ -33,5 +34,8 @@
                 margin: 0;
             }
         }
+    }
+    &_header{
+        color: $black;
     }
 }

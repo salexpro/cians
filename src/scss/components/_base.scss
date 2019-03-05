@@ -28,10 +28,14 @@ html, body{
 .wrap {
     overflow: hidden;
     min-width: 320px;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
     min-height: 100vh;
+    > *{
+        width: 100%;
+    }
 }
 
 %linkline{

@@ -1,0 +1,41 @@
+mixin person(data)
+    .team_person
+        h4 ANMOL BHANDARI
+        i.team_person_position
+            | CEO & Founder
+        ul.team_person_roles
+            li
+                | Investment Director & Head of BD, Gaia Renewable Capital
+            li
+                | Director, Business Development, Copal Partners
+            li
+                | Hedge Fund Strategies Group, Goldman Sachs
+            li
+                | Harvard Business School, OPM
+            li
+                | B.Sc. Electrical Engineering, Villanova University
+
+section.team
+    .grid-container.team_inner
+        .grid-x.grid-margin-x
+            .cell.large-4
+                h2 THE TEAM
+            .cell.large-8
+                .grid-x.grid-margin-x
+                    .cell.large-6
+                        h3.team_header
+                            | MANAGEMENT
+                    .cell.large-6
+                        h3.team_header
+                            | ADVISORS
+                
+                each _ in Array(3)
+                    .grid-x.grid-margin-x
+                        .cell.large-6
+                            +person()
+                        .cell.large-6
+                            +person()
+                .grid-x.grid-margin-x
+                    .cell.large-6
+                        +person()
+                    

@@ -9,6 +9,7 @@ mixin 3col(data)
                         h3.info_item_title
                             =item.title
                         p.info_item_descr
-                            =item.descr
-                        a.info_item_more(href=item.link)
-                            | LEARN MORE >
+                            !=item.descr
+                        if item.link
+                            a.info_item_more(href=item.link)
+                                | LEARN MORE >

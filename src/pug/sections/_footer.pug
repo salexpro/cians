@@ -9,18 +9,21 @@ footer.grid-container.footer
     },
     {
         content: 'CLIENT LOGIN',
-        link: '#'
+        tag: 'button',
+        attrs: {
+            'data-open': 'popup_login'
+        }
     }])
     .grid-x.medium-up-3.footer_inner
         .cell.footer_cell
-            h4.footer_header
+            h6.footer_header
                 | DOWNLOAD SAMPLES
             form.form.form--email(action="")
                 input(type="email" placeholder="Email address..." required)
                 button.form_button
                     +icon('arrow', [7, 10])
         .cell.footer_cell
-            h4.footer_header
+            h6.footer_header
                 | SPEAK WITH US
             p.small Set up an appointment to speak with us.
             a.button.small(href="https://calendly.com/ciansanalytics" target="_blank")

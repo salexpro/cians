@@ -1,0 +1,35 @@
+extends ../_layout
+block const
+    -
+        const page = 'who'
+        const name = 'Who We Are'
+
+block content
+    +lead({
+        header: 'WHO WE ARE',
+        lead: 'In today’s ever-changing business and market landscape, companies, funds, and quantitative forms need a way to do more with less – that is where our teams come in.'
+    })
+
+    +3col([
+        {
+            title: 'CIANS',
+            descr: 'Cians Analytics provides high-quality, cost-efective research and analytical support to investment banks, private equity funds, corporates, and portfolio companies around the globe. Utilizing Cians allows clients to shift labor-in&shytensive...'
+        },
+        {
+            title: 'TEAM',
+            descr: 'Our team has pooled together a very strong set of individuals in their re&shy;spective felds, and recruited primarily from top universities and professional services institutions globally. This high-quality workforce, coupled with an industry...'
+        },
+        {
+            title: 'VALUE PROPOSITION',
+            descr: 'Our value proposition lies in the fexi&shybility of our engagement model, allow&shy;ing clients to have complete control, while ultimately lowering costs. We believe market intelligence, diligence, and execution don’t have to be prohib&shyitively...'
+        }
+    ])
+
+    +quote({
+        header: 'MANAGEMENT',
+        sub: 'BOARD OF DIRECTORS',
+        content: 'Cians Analytics was established to meet the need for high-quality, cost-efective research and analytical support for fnancial institutions around the globe. Our management has worked for Goldman Sachs & Co., Copal Partners, Credit Suisse & Lazard, and JP Morgan.'
+    })
+
+    include ../sections/_team
+    

@@ -3,7 +3,7 @@ mixin menu(mod, data)
         const menu = data ? data : [
             {
                 content: 'WHO WE ARE',
-                link: '#'
+                link: './who.html'
             },
             {
                 content: 'WHAT WE DO',
@@ -34,5 +34,5 @@ mixin menu(mod, data)
     })
         each item in menu
             li(class=item.hasOwnProperty('state') ? item.state : false)
-                #{item.hasOwnProperty('tag') ? item.tag : 'a'}(href=item.link)&attributes(item.attrs)
+                #{item.hasOwnProperty('tag') ? item.tag : 'a'}(href=item.link || false)&attributes(item.attrs, {'class': item.link ? item.link.includes(page) ? 'active' : false : false})
                     !=item.content
