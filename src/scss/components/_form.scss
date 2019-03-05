@@ -1,20 +1,13 @@
 .form{
-    &--email{
-        width: 100%;
-        max-width: 265px;
-        position: relative;
-        input{
-            margin: 0;
-            font-size: 15px;
-            height: auto;
-            padding: 0.44em 2em 0.44em 0;
-            background: none;
-            border-bottom: 1px solid rgba($secondary-color, 0.4);
-            &:focus{
-                background: none;
-                border-bottom: 1px solid $secondary-color;
-            }
-        }
+    &_input{
+        margin-bottom: 16px;
+    }
+    input{
+        letter-spacing: 4px;
+    }
+    &_bottom{
+        text-align: center;
+        margin-top: 53px;
     }
     &_button{
         position: absolute;
@@ -31,6 +24,30 @@
         &:hover{
             background-color: $secondary-color;
             transition: 0.25s ease-in-out;
+        }
+    }
+    &--email{
+        width: 100%;
+        max-width: 265px;
+        position: relative;
+        input{
+            font-size: 15px;
+            letter-spacing: normal;
+            padding: 0.44em 2em 0.44em 0;
+            background: none;
+            border-bottom: 1px solid rgba($secondary-color, 0.4);
+            &:focus{
+                background: none;
+                border-bottom: 1px solid $secondary-color;
+            }
+        }
+    }
+    &--login{
+        max-width: 330px;
+        margin: auto;
+        font-family: $header-font-family;
+        .button{
+            min-width: 200px;
         }
     }
 }

@@ -1,0 +1,11 @@
+#popup_login.reveal(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    form.form.form--login(action="")
+        .form_input
+            input(type="text" name="login" placeholder="USERNAME" required)
+        .form_input
+            input(type="password" name="password" placeholder="PASSWORD")
+        .form_bottom
+            button.button
+                | SIGN IN
+    button.reveal_close(aria-label='Close' data-close)
+        +icon('close', [14, 15], '', 0, '#7c7c7c')

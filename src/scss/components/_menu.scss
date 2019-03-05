@@ -27,7 +27,8 @@
                 transition: 300ms;
                 transition-delay: 0;
             }
-            &:hover{
+            &:hover, &:focus{
+                outline: none;
                 &::before{
                     transition: 300ms;
                     width: 100%;

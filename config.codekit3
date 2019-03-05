@@ -78,6 +78,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -89,6 +100,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -96,6 +118,28 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -247,6 +291,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/arrow.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/close.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 1103269715967,

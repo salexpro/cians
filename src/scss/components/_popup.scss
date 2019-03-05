@@ -1,3 +1,76 @@
 .reveal{
-    
+    &-overlay{
+        overflow: auto;
+        padding: 20px;
+        @include breakpoint(small down){
+            padding: 0;
+        }
+    }
+    outline: none;
+
+    &_close{
+        transition: 300ms;
+        padding: 10px;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        &:hover{
+            transform: rotate(90deg);
+        }
+        svg{
+            display: block;
+        }
+    }
+
+    &.fade-in.mui-enter {
+        transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+        @include breakpoint(small down) {
+            transform: none;
+        }
+        &.mui-enter-active {
+            transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+            @include breakpoint(small down) {
+                transform: none;
+            }
+        }
+    }
+
+    &.fade-out.mui-leave {
+        transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+        @include breakpoint(small down) {
+            transform: none;
+        }
+        &.mui-leave-active {
+            transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+            @include breakpoint(small down) {
+                transform: none;
+            }
+        }
+    }
+}
+
+.fade-in.mui-enter {
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    transition-property: all;
+    @include breakpoint(small down) {
+        transition-duration: 300ms;
+    }
+    &.mui-enter-active {
+        opacity: 1;
+    }
+}
+
+.fade-out.mui-leave {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    opacity: 1;
+    transition-property: all;
+    @include breakpoint(small down) {
+        transition-duration: 300ms;
+    }
+    &.mui-leave-active {
+        opacity: 0;
+    }
 }

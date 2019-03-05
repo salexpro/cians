@@ -37,7 +37,7 @@
 // @include foundation-meter-element;
 // @include foundation-slider;
 // @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
@@ -61,6 +61,7 @@
 @import 'components/button';
 @import 'components/menu';
 @import 'components/form';
+@import 'components/popup';
 // @import 'components/offcanvas';
 
 // Sections

@@ -20,7 +20,7 @@ html, body{
 :-webkit-autofill:hover,
 :-webkit-autofill:focus,
 :-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0px 1000px $white inset;
+    -webkit-box-shadow: 0 0 0px 1000px $light-gray inset;
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: $black;
 }
@@ -57,7 +57,8 @@ a{
             transition: 250ms;
             transition-delay: 0;
         }
-        &:hover{
+        &:hover, &:focus{
+            outline: none;
             &::before{
                 transition: 250ms;
                 width: calc(100% + 1px);
