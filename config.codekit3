@@ -190,12 +190,148 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/assets/favicon/.gitkeep": {
+	"/src/assets/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 1091,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 2279,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 995,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/.gitkeep",
+		"oAP": "/build/assets/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/src/assets/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 305,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 386,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/favicon/favicon.ico",
+		"oF": 0
+		},
+	"/src/assets/favicon/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 832,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 710,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 692,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-310x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 1204,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-310x310.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 635,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-70x70.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/favicon/site.webmanifest",
 		"oF": 0
 		},
 	"/src/assets/fonts/Calluna/Calluna-It.woff": {
@@ -316,12 +452,97 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/splash/launch-1125x2436.jpg": {
+		"ft": 16384,
+		"iS": 94432,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1125x2436.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1242x2148.jpg": {
+		"ft": 16384,
+		"iS": 97478,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1242x2148.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1536x2048.jpg": {
+		"ft": 16384,
+		"iS": 111113,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1536x2048.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1668x2224.jpg": {
+		"ft": 16384,
+		"iS": 130375,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1668x2224.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-2048x2732.jpg": {
+		"ft": 16384,
+		"iS": 188253,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-2048x2732.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-640x1136.jpg": {
+		"ft": 16384,
+		"iS": 30141,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-640x1136.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-750x1294.jpg": {
+		"ft": 16384,
+		"iS": 39711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-750x1294.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/src/CNAME": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/build/CNAME",
+		"oF": 0
+		},
+	"/src/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/favicon.ico",
 		"oF": 0
 		},
 	"/src/js/app.js": {
@@ -660,9 +881,9 @@
 	"creationDate": 505831586,
 	"displayValue": " Cians",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 573415866.40541196
+	"lastBuiltDate": 573484453.05111504
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
