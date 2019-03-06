@@ -1,4 +1,4 @@
-.equity{
+.carousel{
     padding: 80px 0;
     background-color: rgba($light-gray, 0.8);
     &_inner{
@@ -12,5 +12,11 @@
         font-family: $header-font-family;
         font-size: 12px;
         letter-spacing: 3px;
+    }
+    &_details{
+        margin-top: 60px;
+    }
+    &_header{
+        text-align: center;
     }
 }

@@ -57,7 +57,7 @@
             padding: 0.7em 1em;
             color: $secondary-color;
             letter-spacing: 2.4px;
-            transition: 3ms time;
+            transition: 300ms;
         }
         &:not([class*="--gray"]) {
             a, button:not(.button){

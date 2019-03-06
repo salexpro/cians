@@ -425,14 +425,6 @@
 		"oAP": "/build/assets/fonts/CoreSans/CoreSansB55Bold.woff2",
 		"oF": 0
 		},
-	"/src/assets/img/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/assets/img/.gitkeep",
-		"oF": 0
-		},
 	"/src/assets/img/arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -462,6 +454,17 @@
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
+		},
+	"/src/assets/img/og-image.jpg": {
+		"ft": 16384,
+		"iS": 153316,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/og-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/src/assets/splash/launch-1125x2436.jpg": {
 		"ft": 16384,
@@ -638,6 +641,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/contact.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/contact.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -678,13 +691,33 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_equity.pug": {
+	"/src/pug/sections/_carousel.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_equity.html",
+		"oAP": "/build/_carousel.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_contact_form.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_contact_form.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_contacts.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_contacts.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -901,7 +934,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/sections/_equity.scss": {
+	"/src/scss/sections/_carousel.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -909,7 +942,33 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_equity.css",
+		"oAP": "/build/scss/css/_carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_contact_form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_contact_form.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_contacts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_contacts.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1029,7 +1088,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 573503397.869205
+	"lastBuiltDate": 573582807.158427
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

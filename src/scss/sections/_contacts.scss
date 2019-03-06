@@ -1,0 +1,11 @@
+.contacts{
+    max-width: 980px;
+    margin-bottom: 190px;
+    &_info{
+        color: $dark-gray;
+        letter-spacing: 0.51px;
+        a{
+            color: $dark-gray;
+        }
+    }
+}

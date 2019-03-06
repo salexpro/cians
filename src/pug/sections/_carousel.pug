@@ -1,0 +1,55 @@
+mixin carousel_item(header, list)
+    .cell.large-4.carousel_item
+        h3.carousel_header
+            !=header
+        ul.carousel_descr
+            each item in list
+                li
+                    =item
+
+section.carousel
+    .grid-container.carousel_inner
+        .grid-x.grid-margin-x
+            .cell.large-4
+                h2.h4
+                    | PRIVATE EQUITY
+                p.carousel_descr
+                    | With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and re&shy;sources are sparse.
+                a.carousel_more(href="#")
+                    | LEARN MORE >
+            .cell.large-8
+        .grid-x.grid-margin-x.carousel_details
+            +carousel_item('OPPORTUNITY SOURCING ORIGINATION', [
+                'Market/Sector Company Identifcation, with CEO/CFO Contact Information',
+                'Conference and Attendee Identifcation, with Profle and Contact Information',
+                'Company Profles',
+                'CIM Summaries',
+                'Industry Overviews, Deep Dives and Primers',
+                'Monthly Sector Roundups',
+                'Pre-Meeting Materials',
+                'Capital Structure Analysis',
+                'Market & Macro Trends Reports'
+            ])
+
+            +carousel_item('DEAL<br>SUPPORT', [
+                'Library Services',
+                'Financial Models (DCF, IRR, Revenue Build-Up)',
+                'Trading and Transaction Comparables',
+                'Market Studies',
+                'Identifcation and Surveys',
+                'Sensitivity Analysis',
+                'IC Memo Support'
+            ])
+
+            +carousel_item('PORTFOLIO<br>MONITORING', [
+                'Financial Benchmarking',
+                'Portfolio Health Dashboard',
+                'Buyers Lists/Add-On Acquisition List',
+                'Competitor Analysis',
+                'Strategic Planning Analysis',
+                'SWOT Analysis',
+                'LP Presentations',
+                'Product or Market Expansion Analysis',
+                'Value Creation Planning Support',
+                'Exit Options Analysis'
+            ])

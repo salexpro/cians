@@ -1,13 +1,16 @@
 .form{
+    font-family: $header-font-family;
     &_input{
-        margin-bottom: 16px;
+        margin-bottom: 5px;
     }
-    input{
+    input, textarea{
         letter-spacing: 4px;
     }
+    textarea{
+        min-width: 100%;
+    }
     &_bottom{
-        text-align: center;
-        margin-top: 53px;
+        margin-top: 40px;
     }
     &_button{
         position: absolute;
@@ -30,6 +33,7 @@
         width: 100%;
         max-width: 265px;
         position: relative;
+        font-family: $body-font-family;
         input{
             font-size: 15px;
             letter-spacing: normal;
@@ -45,7 +49,15 @@
     &--login{
         max-width: 330px;
         margin: auto;
-        font-family: $header-font-family;
+        .form{
+            &_input{
+                margin-bottom: 16px;
+            }
+            &_bottom{
+                text-align: center;
+                margin-top: 53px;
+            }
+        }
         .button{
             min-width: 200px;
         }

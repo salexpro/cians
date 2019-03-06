@@ -1,0 +1,21 @@
+
+section.grid-container.contact_form
+    .grid-x.grid-margin-x
+        .cell.large-4
+            h2.h3
+                | LEAVE US A MESSAGE
+            p.contact_form_info
+                | Cians Analytics was established to meet the need for high-quality, cost-efective research and analytical support for fnancial institutions around the globe.
+        .cell.large-8
+            form.form
+                .form_input
+                    input(type="text" name="name" placeholder="NAME" required)
+                .form_input
+                    input(type="email" name="email" placeholder="EMAIL" required)
+                .form_input
+                    input(type="text" name="company" placeholder="COMPANY")
+                .form_input
+                    textarea(name="message" rows="10" placeholder="MESSAGE")
+                .form_bottom
+                    button.button
+                        | SEND MESSAGE

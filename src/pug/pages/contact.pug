@@ -1,0 +1,15 @@
+extends ../_layout
+block const
+    -
+        const page = 'contact'
+        const name = 'Contact Us'
+
+block content
+    +lead({
+        header: 'CONTACT US',
+        lead: 'Cians helps fnancial institutions focus on what they do best.'
+    })
+
+    include ../sections/_contacts
+    include ../sections/_contact_form
+    
