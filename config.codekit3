@@ -67,6 +67,17 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/foundation-sites/dist/js/plugins/foundation.core.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1088,7 +1099,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 573582807.158427
+	"lastBuiltDate": 573584613.55422401
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

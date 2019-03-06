@@ -1,9 +1,9 @@
 #popup_login.reveal(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-    form.form.form--login(action="")
+    form.form.form--login(data-abide novalidate)
         .form_input
             input(type="text" name="login" placeholder="USERNAME" required)
         .form_input
-            input(type="password" name="password" placeholder="PASSWORD")
+            input(type="password" name="password" placeholder="PASSWORD" required)
         .form_bottom
             button.button
                 | SIGN IN

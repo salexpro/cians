@@ -5,6 +5,13 @@
     }
     input, textarea{
         letter-spacing: 4px;
+        transition: 300ms;
+        &.is-invalid-input{
+            // background: inherit;
+            &:not(:focus) + .form_button{
+                background-color: get-color(alert);
+            }
+        }
     }
     textarea{
         min-width: 100%;
@@ -40,6 +47,9 @@
             padding: 0.44em 2em 0.44em 0;
             background: none;
             border-bottom: 1px solid rgba($secondary-color, 0.4);
+            &.is-invalid-input{
+                background: inherit;
+            }
             &:focus{
                 background: none;
                 border-bottom: 1px solid $secondary-color;
