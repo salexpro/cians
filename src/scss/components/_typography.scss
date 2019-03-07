@@ -1,11 +1,39 @@
 h1, h2{
     letter-spacing: 5px;
+    @include breakpoint(medium down){
+        letter-spacing: 2.16px;
+    }
+    @include breakpoint(small down){
+        text-align: center;
+    }
 }
+
 h3, .h3{
     letter-spacing: 4px;
+    @include breakpoint(medium down){
+        letter-spacing: 1.92px;
+    }
+    @include breakpoint(small down){
+        letter-spacing: 1.68px;
+    }
+    .subheader{
+        @include breakpoint(medium down){
+            font-size: 14px;
+            letter-spacing: 1.92px;
+            margin-top: 4px;
+        }
+        @include breakpoint(small down){
+            font-size: 16px;
+            margin-top: 2px;
+            margin-bottom: 24px;
+        }
+    }
 }
 h4{
     letter-spacing: 3.5px;
+    @include breakpoint(medium down){
+        letter-spacing: 1.68px;
+    }
 }
 h6, .h6{
     letter-spacing: 3.49px;
@@ -20,4 +48,10 @@ h6, .h6{
 .lead{
     letter-spacing: 0.42px;
     margin: 0;
+    @include breakpoint(medium down){
+        font-size: 18px;
+    }
+    @include breakpoint(small down){
+        font-size: 16px;
+    }
 }

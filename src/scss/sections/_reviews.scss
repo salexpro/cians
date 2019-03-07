@@ -1,13 +1,16 @@
 .reviews{
     padding-bottom: 65px;
+    margin-top: 52px;
     @include breakpoint(medium down){
         padding: 0 63px 40px;
+        margin-top: 40px;
     }
     @include breakpoint(768px down){
         padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 40px;
     }
     @include breakpoint(small down){
         padding: 0 24px 32px;
+        margin-top: 25px;
     }
     &_video{
         margin-bottom: 16px;

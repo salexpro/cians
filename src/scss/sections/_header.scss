@@ -1,21 +1,7 @@
 .header{
-    margin-bottom: 52px;
     min-height: 75px;
-    @include breakpoint(medium down){
-        margin-bottom: 40px;
-        padding: 0 63px;
-    }
-    @include breakpoint(768px down){
-        padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640) );
-    }
-    @include breakpoint(small down){
-        padding: 0 24px;
-        margin-bottom: 25px;
-    }
+    padding: 0;
     &_logo {
-        background-color: $white;
-        box-shadow: 0 0 50px 20px $white;
-        border-radius: 10px;
         @include breakpoint(medium down){
             width: 124px;
         }

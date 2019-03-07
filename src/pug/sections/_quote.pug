@@ -2,13 +2,13 @@ mixin quote(data)
     section.quote
         .grid-container.quote_inner
             .grid-x.grid-padding-x
-                .cell.large-4
+                .cell.large-4.medium-4
                     h2.h3
                         =data.header
                         if data.sub
                             span.subheader
                                 =data.sub
-                .cell.large-8
+                .cell.large-8.medium-8
                     if typeof data.content == 'string'
                         i.quote_italic
                             =data.content

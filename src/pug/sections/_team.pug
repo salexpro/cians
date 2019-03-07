@@ -18,24 +18,29 @@ mixin person(data)
 section.team
     .grid-container.team_inner
         .grid-x.grid-margin-x
-            .cell.large-4
+            .cell.large-4.medium-4
                 h2 THE TEAM
-            .cell.large-8
+            .cell.large-8.medium-8
                 .grid-x.grid-margin-x
-                    .cell.large-6
-                        h3.team_header
+                    .cell.large-6.medium-6.team_item
+                        h3.team_header.is_open
                             | MANAGEMENT
-                    .cell.large-6
+                        .team_persons
+                            each _ in Array(4)
+                                +person()
+                    .cell.large-6.medium-6.team_item
                         h3.team_header
                             | ADVISORS
-                
-                each _ in Array(3)
-                    .grid-x.grid-margin-x
-                        .cell.large-6
-                            +person()
-                        .cell.large-6
-                            +person()
-                .grid-x.grid-margin-x
-                    .cell.large-6
-                        +person()
+                        .team_persons
+                            each _ in Array(3)
+                                +person()
+                //- each _ in Array(3)
+                //-     .grid-x.grid-margin-x
+                //-         .cell.large-6.medium-6
+                //-             +person()
+                //-         .cell.large-6.medium-6
+                //-             +person()
+                //- .grid-x.grid-margin-x
+                //-     .cell.large-6.medium-6
+                //-         +person()
                     

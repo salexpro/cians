@@ -20,3 +20,7 @@ $('#menu').on('opened.zf.offcanvas', () => {
     $('.header_hamb').removeClass('is_active');
     $('.menu--header').removeClass('fixed');
 });
+
+$('.team_header').click(function() {
+    $(this).toggleClass('is_open')
+})
