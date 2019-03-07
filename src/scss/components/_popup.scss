@@ -7,7 +7,14 @@
         }
     }
     outline: none;
-
+    @include breakpoint(small down){
+        width: 270px;
+        padding: 48px 16px 40px;
+        height: auto;
+        min-height: auto;
+        top: 50%;
+        left: calc(50% - 145px);
+    }
     &_close{
         transition: 300ms;
         padding: 10px;
@@ -15,6 +22,10 @@
         top: 14px;
         right: 14px;
         -webkit-tap-highlight-color: transparent;
+        @include breakpoint(small down){
+            top: 6px;
+            right: 6px;
+        }
         &:hover{
             transform: rotate(90deg);
         }
@@ -25,27 +36,15 @@
 
     &.fade-in.mui-enter {
         transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
-        @include breakpoint(small down) {
-            transform: none;
-        }
         &.mui-enter-active {
             transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
-            @include breakpoint(small down) {
-                transform: none;
-            }
         }
     }
 
     &.fade-out.mui-leave {
         transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
-        @include breakpoint(small down) {
-            transform: none;
-        }
         &.mui-leave-active {
             transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
-            @include breakpoint(small down) {
-                transform: none;
-            }
         }
     }
 }
@@ -55,9 +54,6 @@
     transition-timing-function: ease-out;
     opacity: 0;
     transition-property: all;
-    @include breakpoint(small down) {
-        transition-duration: 300ms;
-    }
     &.mui-enter-active {
         opacity: 1;
     }
@@ -68,9 +64,6 @@
     transition-timing-function: ease-in;
     opacity: 1;
     transition-property: all;
-    @include breakpoint(small down) {
-        transition-duration: 300ms;
-    }
     &.mui-leave-active {
         opacity: 0;
     }

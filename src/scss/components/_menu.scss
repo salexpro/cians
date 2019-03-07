@@ -19,13 +19,13 @@
         @include breakpoint(medium down){
             z-index: 14;
             padding-top: 15px;
-            padding: 15px 63px 22px;
+            padding: 15px 63px 24px;
         }
         @include breakpoint(768px down){
-            padding: 15px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 22px;
+            padding: 15px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 24px;
         }
         @include breakpoint(small down){
-            padding: 15px 24px 22px;
+            padding: 15px 24px 24px;
         }
         &.fixed{
             position: fixed;

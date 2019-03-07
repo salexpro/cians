@@ -6,7 +6,7 @@
         margin-bottom: 40px;
         padding: 0 63px;
         max-width: none;
-        margin-top: 18px;
+        margin-top: 8px;
     }
     @include breakpoint(768px down){
         padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));

@@ -7,6 +7,15 @@ button {
 .button{
     letter-spacing: 4.32px;
     min-width: 275px;
+    @include breakpoint(medium down){ 
+        min-width: 200px;
+        font-size: 16px;
+    }
+    @include breakpoint(small down){
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 1.68px;
+    }
     &.hollow{
         letter-spacing: 2.4px;
         border-radius: 14px;

@@ -1,11 +1,43 @@
 .contacts{
     max-width: 980px;
     margin-bottom: 190px;
+    @include breakpoint(medium down){
+        padding: 0 63px;
+        max-width: none;
+        margin-bottom: 48px;
+    }
+    @include breakpoint(768px down){
+        padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
+    }
+    @include breakpoint(small down){
+        padding: 0 24px;
+        margin-bottom: 32px;
+    }
+    &_header.h3{
+        @include breakpoint(medium down){   
+            font-size: 14px;
+        }
+        @include breakpoint(small down){
+            margin-top: 16px;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
     &_info{
         color: $dark-gray;
         letter-spacing: 0.51px;
+        @include breakpoint(medium down){
+            color: $black;
+            font-size: 16px;    
+        }
+        @include breakpoint(small down){
+            margin: 0;
+        }
         a{
             color: $dark-gray;
+            @include breakpoint(medium down){
+                color: $black;
+            }
         }
     }
 }
