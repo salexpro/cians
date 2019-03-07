@@ -15,6 +15,36 @@
     &--header{
         padding: 52px 0;
         justify-content: space-between;
+        background: linear-gradient(to bottom, $white 50%, rgba(255,255,255,0) 100%);
+        @include breakpoint(medium down){
+            z-index: 14;
+            padding-top: 15px;
+            padding-bottom: 22px;
+        }
+        &.fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-left: 63px;
+            padding-right: 63px;
+            @include breakpoint(768px down){
+                padding-left: calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
+                padding-right: calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
+            }
+            @include breakpoint(small down){
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            + .menu{
+                margin-top: 75px;
+            }
+        }
+        li:not([class^='header']){
+            @include breakpoint(medium down){
+                display: none;
+            }
+        }
         a{
             position: relative;
             &::before{
@@ -50,6 +80,12 @@
     &--lines{
         border-top: 1px solid rgba($secondary-color, 0.5);
         border-bottom: 1px solid rgba($secondary-color, 0.5);
+        li{
+            @include breakpoint(small down){
+                width: 50%;
+                max-width: 162px;
+            }
+        }
         justify-content: center;
         a, button:not(.button){
             min-width: 190px;
@@ -58,6 +94,15 @@
             color: $secondary-color;
             letter-spacing: 2.4px;
             transition: 300ms;
+            @include breakpoint(medium down){
+                min-width: 162px;
+                padding: 0.5em 0.8em;
+                letter-spacing: 1.44px;
+            }
+            @include breakpoint(small down){
+                min-width: auto;
+                width: 100%;
+            }
         }
         &:not([class*="--gray"]) {
             a, button:not(.button){
@@ -77,6 +122,21 @@
         padding: 0 calc(((1140 - 950) / 2) * (100vw - 950px) / (1140 - 950) );
         @media screen and (min-width: 1146px){
             padding: 0 calc((1140px - 950px) / 2);
+        }
+    }
+    &--mobile{
+        max-width: 160px;
+        margin: auto;
+        text-align: center;
+        margin-top: 74px;
+        @include breakpoint(small down){
+            margin-top: 90px;
+        }
+        a, .button{
+            font-size: 16px;
+            padding: 0.6em 0.7em;
+            margin: 8px auto;
+            border-radius: 19px;
         }
     }
     a{

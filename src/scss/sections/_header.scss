@@ -1,6 +1,77 @@
 .header{
     margin-bottom: 52px;
-    &_logo[href]{
-        color: $black;
+    min-height: 75px;
+    @include breakpoint(medium down){
+        margin-bottom: 40px;
+        padding: 0 63px;
+    }
+    @include breakpoint(768px down){
+        padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640) );
+    }
+    @include breakpoint(small down){
+        padding: 0 24px;
+        margin-bottom: 25px;
+    }
+    &_logo {
+        background-color: $white;
+        box-shadow: 0 0 50px 20px $white;
+        border-radius: 10px;
+        @include breakpoint(medium down){
+            width: 124px;
+        }
+        a{
+            color: $black;
+        }
+    }
+    &_nav{
+        display: none;
+        @include breakpoint(medium down){
+            display: block;
+        }
+    }
+    &_hamb{
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+        width: 38px;
+        // position: fixed;
+        top: 23px;
+        right: 0;
+        z-index: 14;
+        transform: translateY(0);
+        display: block;
+        transition: 300ms;
+        &.is_active{
+            .header_hamb{
+                &_icon{
+                    transform: rotate(45deg);
+                }
+                &_line{
+                    &--top{
+                        stroke-dashoffset: -98px;
+                    }
+                    &--bottom{
+                        stroke-dashoffset: -138px;
+                    }
+                }
+            }
+        }
+        &_icon{
+            display: block;
+            width: 100%;
+            transition: 300ms;
+        }
+        &_line{
+            fill:none;
+            transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+            stroke: $black;
+            stroke-width: 5.5;
+            stroke-linecap: square;
+            &--top{
+                stroke-dasharray: 40 139;
+            }
+            &--bottom{
+                stroke-dasharray: 40 180;
+            }
+        }
     }
 }

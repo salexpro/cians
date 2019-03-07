@@ -84,11 +84,23 @@ blockquote{
     letter-spacing: 0.16px;
     // line-height: 1.35;
     margin: 0;
+    @include breakpoint(medium down){
+        font-size: 18px;
+    }
+    @include breakpoint(small down){
+        font-size: 16px;
+        line-height: 1.44;
+    }
     cite{
         margin-top: 27px;
         font-family: $header-font-family;
         font-style: normal;
         letter-spacing: 2.75px;
+        @include breakpoint(medium down){
+            margin-top: 18px;
+            font-size: 12px;
+            letter-spacing: 1.44px;
+        }
         b{
             display: block;
             font-size: 14px;
@@ -96,6 +108,10 @@ blockquote{
             color: $primary-color;
             font-weight: normal;
             margin-bottom: 2px;
+            @include breakpoint(medium down){
+                margin: 0;
+                letter-spacing: 1.68px;
+            }
         }
     }
 }

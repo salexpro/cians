@@ -17,5 +17,14 @@ button {
         min-width: 230px;
         padding-left: 0.8em;
         padding-right: 0.8em;
+        @include breakpoint(medium down){
+            min-width: 200px;
+            letter-spacing: 1.44px;
+        }
+        @include breakpoint(small down){
+            max-width: 270px;
+            width: 100%;
+            font-size: 14px;
+        }
     }
 }

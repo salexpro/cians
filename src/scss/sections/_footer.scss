@@ -1,9 +1,23 @@
 .footer{
     margin-top: auto;
     padding-top: 50px;
+    @include breakpoint(medium down){
+        padding: 40px 63px;
+    }
+    @include breakpoint(768px down){
+        padding: 40px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 0;
+    }
+    @include breakpoint(small down){
+        padding: 32px 24px 16px;
+    }
     &_inner{
-        max-width: 950px;
-        margin: auto;
+        max-width: 920px;
+        @include breakpoint(large){
+            margin: auto;
+        }
+        @include breakpoint(small down){
+            padding-top: 56px;
+        }
     }
     &_cell{
         padding-top: 40px;
@@ -15,21 +29,53 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        @include breakpoint(medium down){
+            font-size: 14px;
+            padding: 24px 0 40px;
+        }
+        @include breakpoint(small down){
+            font-size: 16px;
+            padding: 0;
+            & + & {
+                padding-top: 32px;
+            }
+        }
         .small:not(.button){
             font-size: 13px;
             margin-bottom: auto;
+            @include breakpoint(medium down){
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+            @include breakpoint(small down){
+                font-size: 16px;
+            }
         }
         b{
             font-family: $header-font-family;
             letter-spacing: 3px;
             font-size: 12px;
             color: $primary-color;
+            @include breakpoint(medium down){
+                letter-spacing: 1.44px;
+            }
+            @include breakpoint(small down){
+                font-size: 14px;
+                float: left;
+                + a {
+                    float: right;
+                    line-height: 1;
+                }
+            }
         }
         a:not(.button){
             color: $secondary-color;
         }
         p{
             margin-bottom: 10px;
+            @include breakpoint(small down){
+                width: 100%;
+            }
             &:last-child{
                 margin: 0;
             }
