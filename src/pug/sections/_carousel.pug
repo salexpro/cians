@@ -1,8 +1,8 @@
 mixin carousel_item(header, list)
-    .cell.large-4.carousel_item
+    .cell.large-4.medium-4.carousel_item
         h3.carousel_header
             !=header
-        ul.carousel_descr
+        ul.carousel_item_list
             each item in list
                 li
                     =item
@@ -10,14 +10,14 @@ mixin carousel_item(header, list)
 section.carousel
     .grid-container.carousel_inner
         .grid-x.grid-margin-x
-            .cell.large-4
+            .cell.large-4.medium-4
                 h2.h4
                     | PRIVATE EQUITY
                 p.carousel_descr
                     | With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and re&shy;sources are sparse.
                 a.carousel_more(href="#")
                     | LEARN MORE >
-            .cell.large-8
+            .cell.large-8.medium-8
         .grid-x.grid-margin-x.carousel_details
             +carousel_item('OPPORTUNITY SOURCING ORIGINATION', [
                 'Market/Sector Company Identifcation, with CEO/CFO Contact Information',

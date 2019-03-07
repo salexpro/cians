@@ -1,22 +1,64 @@
 .carousel{
     padding: 80px 0;
     background-color: rgba($light-gray, 0.8);
+    @include breakpoint(medium down){
+        padding: 40px 51px;
+    }
+    @include breakpoint(768px down){
+        padding: 40px calc(12px + (51 - 12) * (100vw - 640px) / (768 - 640));
+    }
+    @include breakpoint(small down){
+        padding: 32px 12px;
+    }
     &_inner{
         max-width: 980px;
+        @include breakpoint(medium down){
+            .h4{
+                font-size: 16px;
+                text-align: left;
+            }
+        }
     }
     &_descr{
         color: $dark-gray;
         letter-spacing: 0.51px;
+        @include breakpoint(medium down){
+            color: $black;
+            margin-top: 16px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
     }
     &_more{
         font-family: $header-font-family;
         font-size: 12px;
         letter-spacing: 3px;
+        @include breakpoint(medium down){
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
     }
     &_details{
         margin-top: 60px;
     }
+    &_item{
+        @include breakpoint(small down){
+            & + & {
+                margin-top: 24px;
+            }
+        }
+        &_list{
+            color: $dark-gray;
+            letter-spacing: 0.51px;
+            @include breakpoint(medium down){
+                font-size: 14px;
+            }
+        }
+    }
     &_header{
         text-align: center;
-    }
+        @include breakpoint(medium down){
+            font-size: 16px;
+        }
+    }   
 }
