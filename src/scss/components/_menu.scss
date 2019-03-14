@@ -15,7 +15,7 @@
     &--header{
         justify-content: space-between;
         background: linear-gradient(to bottom, $white 50%, rgba(255,255,255,0) 100%);
-        padding: 52px 63px;
+        padding: 52px 13px;
         @include breakpoint(medium down){
             z-index: 14;
             padding-top: 15px;
@@ -36,13 +36,18 @@
                 margin-top: 75px;
             }
         }
-        li:not([class^='header']){
-            @include breakpoint(medium down){
-                display: none;
+        li{
+            &:not([class^='header']){
+                min-width: 142px;
+                text-align: center;
+                @include breakpoint(medium down){
+                    display: none;
+                }
             }
         }
         a{
             position: relative;
+            display: inline-block;
             &::before{
                 @extend %line;
                 left: 0;
@@ -73,6 +78,35 @@
             }
         }
     }
+    &--small{
+        padding: 40px 15px 80px 0;
+        margin-left: -13px;
+        @include breakpoint(medium down){
+            padding: 25px 63px 10px;
+            margin-left: 0;
+        }
+        @include breakpoint(768px down){
+            padding: 25px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 10px;
+        }
+        @include breakpoint(small down){
+            padding: 25px 24px 10px;
+        }
+        li:not([class^='header']){
+            min-width: 170px;
+        }
+        a, .button{
+            font-size: 15px;
+            letter-spacing: 1.92px;
+            border-radius: 17px;
+        }
+        .button{
+            padding-left: 1.6em;
+            padding-right: 1.6em;
+        }
+        .header_logo{
+            max-width: 170px;
+        }
+    }
     &--lines{
         border-top: 1px solid rgba($secondary-color, 0.5);
         border-bottom: 1px solid rgba($secondary-color, 0.5);
@@ -99,12 +133,12 @@
                 min-width: auto;
                 width: 100%;
             }
-        }
-        &:not([class*="--gray"]) {
-            a, button:not(.button){
-                &:hover{
-                    background-color: rgba($light-gray, 0.8);
-                }
+            &:hover{
+                background-color: rgba($light-gray, 0.8);
+            }
+            &.active{
+                background-color: $primary-color;
+                color: $white;
             }
         }
     }
@@ -126,16 +160,18 @@
         }
     }
     &--mobile{
-        max-width: 160px;
-        margin: auto;
-        text-align: center;
-        margin-top: 74px;
+        &:not(.menu--small){
+            max-width: 160px;
+            margin: auto;
+            text-align: center;
+            margin-top: 74px;
+        }
         @include breakpoint(small down){
             margin-top: 90px;
         }
         a, .button{
             font-size: 16px;
-            padding: 0.6em 0.7em;
+            padding: 0.65em 0.7em 0.55em;
             margin: 8px auto;
             border-radius: 19px;
         }

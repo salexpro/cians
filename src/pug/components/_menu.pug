@@ -12,7 +12,7 @@ mixin menu(mod, data)
             {
                 content: '<img src="./assets/img/logo.svg" alt="Cians">',
                 link: '/',
-                state: 'header_logo',
+                class: 'header_logo',
                 is_main: true
             },
             {
@@ -34,7 +34,7 @@ mixin menu(mod, data)
                             <path class="header_hamb_line header_hamb_line--bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
                          </svg>`,
                 tag: 'button',
-                state: 'header_nav',
+                class: 'header_nav',
                 is_main: true,
                 attrs: {
                     'class': 'header_hamb',
@@ -47,6 +47,6 @@ mixin menu(mod, data)
     })
         each item in menu
             if !(mod.includes('vertical') && item.is_main)
-                li(class=item.hasOwnProperty('state') ? item.state : false)
-                    #{item.hasOwnProperty('tag') ? item.tag : 'a'}(href=item.link || false)&attributes(item.attrs, {'class': item.link ? item.link.includes(page) ? 'active' : false : false})
+                li(class=item.class || false)
+                    #{item.hasOwnProperty('tag') ? item.tag : 'a'}(href=item.link || false)&attributes(item.attrs, {'class': item.link ? item.link.includes(page) || item.is_active ? 'active' : false : false})
                         !=item.content

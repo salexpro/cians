@@ -1,5 +1,5 @@
 header.grid-container.header
-    +menu(['--header', 'simple'])
+    +menu(['--header', 'simple', ...header_mod || ''])
     if page == 'main'
         +menu(['--lines', '--gray'], [{
             content: 'RESEARCH',
@@ -8,5 +8,5 @@ header.grid-container.header
         {
             content: 'DATA ANALYTICS',
             link: '#',
-            state: 'active'
+            is_active: true
         }])

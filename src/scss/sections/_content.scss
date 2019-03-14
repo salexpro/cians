@@ -1,0 +1,25 @@
+.content{
+    @include breakpoint(medium down){
+        padding-top: 30px;
+    }
+    @include breakpoint(small down){
+        padding-top: 20px;
+    }
+    &_text{
+        margin-top: 56px;
+        font-size: 24px;
+        color: $dark-gray;
+        @include breakpoint(medium down){
+            margin-top: 40px;
+            padding: 0 51px;
+            font-size: 16px;
+        }
+        @include breakpoint(768px down){
+            padding: 0 calc(12px + (51 - 12) * (100vw - 640px) / (768 - 640));
+        }
+        @include breakpoint(small down){
+            margin-top: 32px;
+            padding: 0 13px;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 h1, h2{
     letter-spacing: 5px;
+    text-transform: uppercase;
     @include breakpoint(medium down){
         letter-spacing: 2.16px;
     }

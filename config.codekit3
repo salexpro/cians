@@ -177,6 +177,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/konva/konva.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/konva/konva.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -592,6 +603,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/src/js/components/_carousel.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_carousel.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/components/fastnav.js": {
 		"bF": 0,
 		"ft": 64,
@@ -663,6 +685,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/careers.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/careers.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/contact.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -680,6 +712,16 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/privacy.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/privacy.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -982,6 +1024,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_content.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_content.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1097,7 +1152,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 573686255.55432606
+	"lastBuiltDate": 574223822.97688401
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
