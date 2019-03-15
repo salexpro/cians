@@ -1,11 +1,20 @@
-section.grid-container.reviews
-    .grid-x.grid-margin-x.align-middle
+mixin tab(mod, quote, author, fund, is_active)
+    .grid-x.grid-margin-x.align-middle.reviews_tab&attributes({
+        'id': `tab_${mod}`,
+        'class': is_active ? 'active': ''
+    })
         .cell.large-6.medium-5.small-12.reviews_video
             //- video(src="#")
-            img(srcset='https://via.placeholder.com/1040x700/b0b0b0/ff00b7?text=VIDEO+TO+GO+HERE 2x, https://via.placeholder.com/520x350/b0b0b0/ff00b7?text=VIDEO+TO+GO+HERE 1x' src="https://via.placeholder.com/520x350/b0b0b0/ff00b7?text=VIDEO+TO+GO+HERE", alt="VIDEO TO GO HERE")
+            img(srcset=`https://via.placeholder.com/1040x700/b0b0b0/ff00b7?text=${mod.toUpperCase()}+VIDEO+TO+GO+HERE 2x, https://via.placeholder.com/520x350/b0b0b0/ff00b7?text=${mod.toUpperCase()}+VIDEO+TO+GO+HERE 1x` src=`https://via.placeholder.com/520x350/b0b0b0/ff00b7?text=${mod.toUpperCase()}+VIDEO+TO+GO+HERE`, alt="VIDEO TO GO HERE")
         .cell.large-6.medium-7.small-12
             blockquote
-                | “Cians has become an indispensable part of my team — between the engagement manager and the analysts, I am always fully covered and they are a natural extension of our desk.”
+                | “
+                =quote
+                |”
                 cite
-                    b PORTFOLIO MANAGER
-                    | 2.4 BILLION AUM LONG/SHORT FUND
+                    b=author
+                    =fund
+
+section.grid-container.reviews
+    +tab('research', 'Quote', 'Author')
+    +tab('analytics', 'Cians has become an indispensable part of my team — between the engagement manager and the analysts, I am always fully covered and they are a natural extension of our desk.', 'PORTFOLIO MANAGER', '2.4 BILLION AUM LONG/SHORT FUND', true)

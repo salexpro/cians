@@ -21,6 +21,15 @@ $('#menu').on('opened.zf.offcanvas', () => {
     $('.menu--header').removeClass('fixed');
 });
 
+$('.menu--gray a').click(function (e) {
+    e.preventDefault();
+    $('.menu--gray a').removeClass('active');
+    $(this).addClass('active');
+    const label = $(this).attr('href').substr(1);
+    $('.reviews_tab').removeClass('active');
+    $(`#tab_${label}`).addClass('active');
+});
+
 $('.team_header').click(function() {
     $(this).toggleClass('is_open')
 })

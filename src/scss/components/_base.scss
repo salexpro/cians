@@ -96,6 +96,7 @@ blockquote{
         font-family: $header-font-family;
         font-style: normal;
         letter-spacing: 2.75px;
+        text-transform: uppercase;
         @include breakpoint(medium down){
             margin-top: 18px;
             font-size: 12px;

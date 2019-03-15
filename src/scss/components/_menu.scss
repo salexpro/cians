@@ -150,6 +150,7 @@
         }
         a{
             background-color: $light-gray;
+            user-select: none;
         }
     }
     &--footer{
