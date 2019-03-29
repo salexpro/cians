@@ -9,6 +9,8 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min';
+
+@codekit-append quiet 'components/_carousel.js'
 */
 
 $(document).foundation();

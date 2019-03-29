@@ -1,4 +1,284 @@
-mixin carousel_item(header, list)
+-
+    const carouselContent = [
+        {
+            isActive: true,
+            title: 'PRIVATE EQUITY',
+            brief: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse.',
+            descr: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse. Our model also allows for quick mobilization on time-sensitive projects and scalable engagement structures to suit every firm\'s size, culture, and requirements.',
+            content: {
+                lists: [
+                    {
+                        title: 'OPPORTUNITY SOURCING ORIGINATION',
+                        list: [
+                            'Market/Sector Company Identifcation, with CEO/CFO Contact Information',
+                            'Conference and Attendee Identifcation, with Profle and Contact Information',
+                            'Company Profles',
+                            'CIM Summaries',
+                            'Industry Overviews, Deep Dives and Primers',
+                            'Monthly Sector Roundups',
+                            'Pre-Meeting Materials',
+                            'Capital Structure Analysis',
+                            'Market & Macro Trends Reports'
+                        ]
+                    },
+                    {
+                        title: 'DEAL<br>SUPPORT',
+                        list: [
+                            'Library Services',
+                            'Financial Models (DCF, IRR, Revenue Build-Up)',
+                            'Trading and Transaction Comparables',
+                            'Market Studies',
+                            'Identifcation and Surveys',
+                            'Sensitivity Analysis',
+                            'IC Memo Support'
+                        ]
+                    },
+                    {
+                        title: 'PORTFOLIO<br>MONITORING',
+                        list: [
+                            'Financial Benchmarking',
+                            'Portfolio Health Dashboard',
+                            'Buyers Lists/Add-On Acquisition List',
+                            'Competitor Analysis',
+                            'Strategic Planning Analysis',
+                            'SWOT Analysis',
+                            'LP Presentations',
+                            'Product or Market Expansion Analysis',
+                            'Value Creation Planning Support',
+                            'Exit Options Analysis'
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            title: 'DATA ANALYTICS',
+            brief: 'The Data Analytics Group supports financial firms, corporations, and private buisnesses with a roster of skilled data professionals.',
+            descr: 'The Data Analytics Group supports financial firms, corporations, and private buisnesses with a roster of skilled data professionals. Our talent pool scales in accordance with client requirements. We provide anything from individual consultants to full teams capable of working at any or all stages of a data pipeline.',
+            content: {
+                text: 'The team includes a diverse mix of software engineers, data engineers, data analysts, buisness analysts, and data scientests able to work on site through vdi, in cloud environments, or hybrid cloud architectures. Together our engineers and analysts offer expertise in multiple languages, including Python, Java, C/C++, Scala, PL/SQL, and R, as well as, proficiency developing on multiple frame works and platforms such as Spark, Hadoop, Node, NO-SQL DBs, SQL DBs, Graph based DBs, and more.<br><br>We break the data pipeline into five stages, and recruit to allow flexible placement on demand.',
+                lists: [
+                    {
+                        title: 'INGESTION',
+                        list: [
+                            'Manage vendors',
+                            'Script process to pull data from vendors',
+                            'Fix broken links',
+                            'Scrape the web and open apis',
+                            'Test and Develop code',
+                        ]
+                    },
+                    {
+                        title: 'PRE-PROCESSING',
+                        list: [
+                            'Verify accuracy',
+                            'Insure consistency',
+                            'Develop and Check documentaiton',
+                            'Check Coverage',
+                            'Automate preprocessing of production data sets',
+                        ]
+                    },
+                    {
+                        title: 'TRANSFORM',
+                        list: [
+                            'Join or split data sets',
+                            'Clean, and reformat',
+                            'Normalize data',
+                            'Coordinate with data scientests to guide etl',
+                        ]
+                    },
+                    {
+                        title: 'POST-PROCESSING',
+                        list: [
+                            'Create filters',
+                            'Tag data',
+                            'Aggregate data',
+                            'Reformat data for warehousing',
+                            'Check data quality',
+                        ]
+                    },
+                    {
+                        title: 'ANALYTICS',
+                        list: [
+                            'Data Visualization',
+                            'Pattern Recognition',
+                            'Data Driven Research',
+                            'Descriptive Analytics',
+                            'ML/AI/NLP models',
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            title: 'CORPORATE & PORTFOLIO COMPANIES',
+            brief: 'The Data Analytics Group supports financial firms, corporations, and private buisnesses with a roster of skilled data professionals.',
+            descr: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse. Our model also allows for quick mobilization on time-sensitive projects and scalable engagement structures to suit every firm\'s size, culture, and requirements.',
+            content: {
+                lists: [
+                    {
+                        title: 'CORPORATES',
+                        list: [
+                            'Market Competitive Intelligence (Landscape Assessment)',
+                            'Market Analysis and Research',
+                            'Customer Market Research and Insights',
+                            'Business Development Support',
+                            'M&A Support',
+                            'C-Suite Support & Board Packs',
+                            'Information Memoranda',
+                            'Financial Modeling, Controlling & Dashboard',
+                            'Market Sizing',
+                            'Project Feasibility Reports',
+                            'Project Finance Reports & Analytics',
+                        ]
+                    },
+                    {
+                        title: 'MARKET ENTRY STRATEGIES',
+                        list: [
+                            'Business Model Options Offering an Innovation Strategy',
+                            'Brand Positioning and Marketing Strategy',
+                            'Distribution Channels',
+                            'Sales Strategy',
+                            'Pricing',
+                            'Sourcing and Manufacturing',
+                            'Service Delivery Model',
+                            'Ecosystem Development',
+                            'Financial and Investment Models',
+                            'Inorganic Growth Model Components',
+                            'Government Relationship Management',
+                            'Supply Chain Optimization Strategy Analysis',
+                        ]
+                    },
+                    {
+                        title: 'EXECUTION MODELS',
+                        list: [
+                            'Performance Tracking and Loss Monitoring',
+                            'Partnering Strategy and Objectives',
+                            'Partner Identification with the Right Mix of Characteristics',
+                            'Value Enhancement Strategies',
+                            'Integration Planning and Execution',
+                            'De-Merger Planning and Execution',
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            title: 'HEDGE FUNDS',
+            brief: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse.',
+            descr: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse. Our model also allows for quick mobilization on time-sensitive projects and scalable engagement structures to suit every firm\'s size, culture, and requirements.',
+            content: {
+                lists: [
+                    {
+                        title: 'EQUITY LONG & SHORT',
+                        list: [
+                            'Analyze & Screen Securities & Provide Watch Alerts',
+                            'Sector/Thematic Research',
+                            'Financial Modeling & Valuation Analysis (DCF, LBO, Sensitivity Analysis)',
+                            'Comparable Companies Analysis',
+                            'Portfolio Monitoring and Performance Analysis',
+                            'News Tracking & Monitoring',
+                            'Niche Industry/Thematic Sector Research',
+                            'Portfolio Monitoring & Analysis',
+                        ]
+                    },
+                    {
+                        title: 'EMERGING MARKETS',
+                        list: [
+                            'Events, Industry, and Market Data Collection',
+                            'Sector/Thematic Research',
+                            'Macroeconomic Research and Analysis',
+                            'Exchange Rate & Global Economies Tracking',
+                            'PESTEL Analysis',
+                            'Commodity Reports',
+                            'Risk Profiling',
+                            'Risk Management',
+                        ]
+                    },
+                    {
+                        title: 'FIXED INCOME & CREDIT',
+                        list: [
+                            'Sector/Thematic Research',
+                            'Debt Structure & Leverage Analyses',
+                            'Covenant Monitoring',
+                            'Cash Flow Modeling',
+                            'Derivatives Analysis & Trading Support Strategies',
+                            'Bankruptcy Analysis',
+                            'Covenant & Indenture Analyses',
+                            'Analyst Recommendation Summaries',
+                            'Peer Group Analysis',
+                            'Credit Rating',
+                            'Credit Risk Analysis',
+                            'Risk Profiling',
+                        ]
+                    },
+                ]
+            }
+        },
+        {
+            title: 'INVESTMENT BANKING',
+            brief: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse.',
+            descr: 'With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and resources are sparse. Our model also allows for quick mobilization on time-sensitive projects and scalable engagement structures to suit every firm\'s size, culture,',
+            content: {
+                lists: [
+                    {
+                        title: 'PRE-DEAL',
+                        list: [
+                            'Shortlist Acquisition Targets',
+                            'Shortlist Buyers by Rationale',
+                            'Company Profiles',
+                            'Industry Overviews',
+                            'Pitchbook Support',
+                            'M&A Case Studies',
+                            'Briefing Packs',
+                            'Strip Profiles',
+                            'Marketing Material',
+                        ]
+                    },
+                    {
+                        title: 'DEAL AND SUPPORT',
+                        list: [
+                            'Pitchbook & Meeting Materials',
+                            'CIM Support',
+                            'Trading Comparables',
+                            'Transaction Comparables',
+                            'Company Benchmarking',
+                            'Valuation (DCF, Relative)',
+                            'Sensitivity & Scenario Analyses',
+                            'Merger Modeling',
+                            'Accretion & Dilution Modeling',
+                            'Creating/Updating Marketing Materials',
+                        ]
+                    },
+                    {
+                        title: 'POST-DEAL',
+                        list: [
+                            'Generation of Future Target Candidates',
+                            'Marketing Newsletters',
+                        ]
+                    },
+                ]
+            }
+        },
+    ]
+
+
+mixin carouselBrief(data, id)
+    .cell.large-4.medium-4.carousel_brief&attributes({
+        id: `carouselBrief${id}`,
+        class: data.isActive ? 'is_active' : false
+    })
+        h2.h4
+            =data.title
+        p.carousel_descr
+            span.carousel_descr_brief
+                !=data.brief
+            span.carousel_descr_full
+                !=data.descr
+        a.carousel_more(data-id=id href=`#carouselDetails${id}`)
+            | LEARN MORE >
+
+mixin carouselList(header, list)
     .cell.large-4.medium-4.carousel_item
         h3.carousel_header
             !=header
@@ -7,50 +287,20 @@ mixin carousel_item(header, list)
                 li
                     =item
 
+mixin carouselDetails(data, id)
+    .grid-x.grid-margin-x.carousel_details(id=`carouselDetails${id}`)
+        if data.text
+            p.cell.carousel_details_info
+                !=data.text
+        each list in data.lists
+            +carouselList(list.title, list.list)
+
 section.carousel
     .grid-container.carousel_inner
-        .grid-x.grid-margin-x
-            .cell.large-4.medium-4
-                h2.h4
-                    | PRIVATE EQUITY
-                p.carousel_descr
-                    | With our solution, clients have the ability to enhance capacity on an "as-needed" basis when time and re&shy;sources are sparse.
-                a.carousel_more(href="#")
-                    | LEARN MORE >
-            .cell.large-8.medium-8
+        .grid-x.grid-margin-x.align-middle.align-right.carousel_row
+            each item, i in carouselContent
+                +carouselBrief(item, i)
+            .cell.large-8.medium-8.carousel_canvas_outer
                 #carousel.carousel_canvas
-        .grid-x.grid-margin-x.carousel_details
-            +carousel_item('OPPORTUNITY SOURCING ORIGINATION', [
-                'Market/Sector Company Identifcation, with CEO/CFO Contact Information',
-                'Conference and Attendee Identifcation, with Profle and Contact Information',
-                'Company Profles',
-                'CIM Summaries',
-                'Industry Overviews, Deep Dives and Primers',
-                'Monthly Sector Roundups',
-                'Pre-Meeting Materials',
-                'Capital Structure Analysis',
-                'Market & Macro Trends Reports'
-            ])
-
-            +carousel_item('DEAL<br>SUPPORT', [
-                'Library Services',
-                'Financial Models (DCF, IRR, Revenue Build-Up)',
-                'Trading and Transaction Comparables',
-                'Market Studies',
-                'Identifcation and Surveys',
-                'Sensitivity Analysis',
-                'IC Memo Support'
-            ])
-
-            +carousel_item('PORTFOLIO<br>MONITORING', [
-                'Financial Benchmarking',
-                'Portfolio Health Dashboard',
-                'Buyers Lists/Add-On Acquisition List',
-                'Competitor Analysis',
-                'Strategic Planning Analysis',
-                'SWOT Analysis',
-                'LP Presentations',
-                'Product or Market Expansion Analysis',
-                'Value Creation Planning Support',
-                'Exit Options Analysis'
-            ])
+        each item, i in carouselContent
+            +carouselDetails(item.content, i)

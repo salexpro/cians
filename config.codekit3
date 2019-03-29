@@ -41,6 +41,12 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
+	"/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/build",
+		"oF": 0
+		},
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -156,6 +162,39 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/gsap/src/minified/easing/EasePack.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/gsap/src/minified/easing/EasePack.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/gsap/src/minified/TimelineMax.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/gsap/src/minified/TimelineMax.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/gsap/src/minified/TweenLite.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/gsap/src/minified/TweenLite.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -420,6 +459,14 @@
 		"oAP": "/build/assets/fonts/CoreSans/CoreSansB35Regular.woff2",
 		"oF": 0
 		},
+	"/src/assets/fonts/CoreSans/CoreSansB45Medium.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/CoreSans/CoreSansB45Medium.ttf",
+		"oF": 0
+		},
 	"/src/assets/fonts/CoreSans/CoreSansB45Medium.woff": {
 		"cB": 0,
 		"ft": 8192,
@@ -589,7 +636,7 @@
 	"/src/js/app.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",
@@ -1146,7 +1193,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 574362946.21395695
+	"lastBuiltDate": 575514118.273224
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
