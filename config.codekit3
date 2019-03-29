@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\" >> docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
@@ -1193,7 +1193,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 575514118.273224
+	"lastBuiltDate": 575514446.49838102
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

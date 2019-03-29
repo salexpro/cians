@@ -6,7 +6,6 @@
 const carousel = () => {
     
     const blackFill = '#2d2d2d', grayFill = '#b0b0b0';
-    const carousel = document.querySelector('#carousel');
     const width = 633;
     const height = 350;
 
@@ -274,14 +273,15 @@ const carousel = () => {
     window.addEventListener('resize', fitStageIntoParentContainer);
 
 }
+if (document.querySelector('#carousel')) {
+    carousel();
 
-carousel();
+    $('.carousel_more').click(function (e) {
+        e.preventDefault();
+        const brief = $(`#carouselBrief${$(this).data('id')}`);
 
-$('.carousel_more').click(function(e) {
-    e.preventDefault();
-    const brief = $(`#carouselBrief${$(this).data('id')}`); 
+        brief.addClass('is_expanded');
 
-    brief.addClass('is_expanded');
-
-    $($(this).attr('href')).addClass('is_active')
-})
+        $($(this).attr('href')).addClass('is_active')
+    })
+}
