@@ -1,3 +1,19 @@
+-
+    const reviews = [
+        {
+            id:  'research',
+            quote: 'Cians has become an indispensable part of my team — between the engagement manager and the analysts, I am always fully covered and they are a natural extension of our desk.',
+            author: 'PORTFOLIO MANAGER',
+            fund: '2.4 BILLION AUM LONG/SHORT FUND'
+        },
+        {
+            id: 'analytics',
+            quote: 'With Cians’ teams, I never have to worry about bad data affecting my downstream decision making',
+            author: 'Quant fund',
+            fund: '$50B AUM'
+        }
+    ]
+
 mixin tab(mod, quote, author, fund, is_active)
     .grid-x.grid-margin-x.align-middle.reviews_tab&attributes({
         'id': `tab_${mod}`,
@@ -16,5 +32,5 @@ mixin tab(mod, quote, author, fund, is_active)
                     =fund
 
 section.grid-container.reviews
-    +tab('research', 'Quote', 'Author')
-    +tab('analytics', 'Cians has become an indispensable part of my team — between the engagement manager and the analysts, I am always fully covered and they are a natural extension of our desk.', 'PORTFOLIO MANAGER', '2.4 BILLION AUM LONG/SHORT FUND', true)
+    each review, i in reviews
+        +tab(...Object.values(review), (i===0))

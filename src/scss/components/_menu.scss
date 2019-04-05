@@ -14,12 +14,19 @@
     text-transform: uppercase;
     &--header{
         justify-content: space-between;
-        background: linear-gradient(to bottom, $white 50%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(to bottom, $white 50%, rgba(255,255,255,0.7) 75%, rgba(255,255,255,0) 100%);
         padding: 52px 13px;
         @include breakpoint(medium down){
             z-index: 14;
             padding-top: 15px;
             padding: 15px 63px 24px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            + .menu{
+                margin-top: 77px;
+            }
         }
         @include breakpoint(768px down){
             padding: 15px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 24px;
@@ -27,15 +34,9 @@
         @include breakpoint(small down){
             padding: 15px 24px 24px;
         }
-        &.fixed{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            + .menu{
-                margin-top: 75px;
-            }
-        }
+        // &.fixed{
+            
+        // }
         li{
             &:not([class^='header']){
                 min-width: 142px;

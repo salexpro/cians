@@ -5,7 +5,8 @@
 // @codekit-prepend quiet '../../../node_modules/gsap/src/minified/easing/EasePack.min.js';
 const carousel = () => {
     
-    const blackFill = '#2d2d2d', grayFill = '#b0b0b0';
+    const blackFill = '#2d2d2d', 
+        grayFill = '#b0b0b0';
     const width = 633;
     const height = 350;
 
