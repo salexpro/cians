@@ -1,17 +1,16 @@
 .footer{
     margin-top: auto;
-    padding-top: 50px;
     @include breakpoint(medium down){
-        padding: 40px 63px 0;
+        padding: 0 63px;
     }
     @include breakpoint(768px down){
-        padding: 40px calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640)) 0;
+        padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
     }
     @include breakpoint(small down){
-        padding: 32px 24px 16px;
+        padding: 0 24px 16px;
     }
     &_inner{
-        max-width: 920px;
+        max-width: 980px;
         @include breakpoint(large){
             margin: auto;
         }
@@ -41,14 +40,9 @@
             }
         }
         .small:not(.button){
-            font-size: 13px;
             margin-bottom: auto;
             @include breakpoint(medium down){
-                font-size: 12px;
                 margin-bottom: 8px;
-            }
-            @include breakpoint(small down){
-                font-size: 16px;
             }
         }
         b{

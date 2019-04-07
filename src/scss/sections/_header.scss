@@ -1,12 +1,22 @@
 .header{
     min-height: 75px;
-    padding: 0;
+    @include breakpoint(medium down){
+        padding: 0 63px;
+    }
+    @include breakpoint(768px down){
+        padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
+    }
+    @include breakpoint(small down){
+        padding: 0 24px;
+    }
     &_logo {
         @include breakpoint(medium down){
             width: 124px;
         }
-        a{
-            color: $black;
+        &_link{
+            &::before, &::after{
+                display: none;
+            }
         }
     }
     &_nav{

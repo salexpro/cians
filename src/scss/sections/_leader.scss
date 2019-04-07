@@ -1,8 +1,8 @@
 .leader{
     margin-bottom: 65px;
+    max-width: 980px;
     &:not(.leader--wide){
         margin-top: 22px;
-        max-width: 980px;
     }
     @include breakpoint(medium down){
         margin-bottom: 40px;

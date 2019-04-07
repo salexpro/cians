@@ -34,6 +34,7 @@
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;
+        padding-right: 15px;
         @include breakpoint(small down){
             position: static;
             transform: none;

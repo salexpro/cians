@@ -165,7 +165,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.35;
+$paragraph-lineheight: 1.5;
 $paragraph-margin-bottom: 1em;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -437,7 +437,7 @@ $select-radius: $global-radius;
 $input-color: $black;
 $input-placeholder-color: rgba($secondary-color, 0.5);
 $input-font-family: inherit;
-$input-font-size: rem-calc(16);
+$input-font-size: rem-calc(14);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
 $input-background: $light-gray;

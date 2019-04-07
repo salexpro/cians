@@ -80,16 +80,17 @@ a{
 }
 
 blockquote{
-    font-size: 32px;
-    letter-spacing: 0.16px;
-    // line-height: 1.35;
+    font-size: 24px;
+    letter-spacing: 0.12px;
+    // line-height: 1.5;f
+    font-style: italic;
     margin: 0;
     @include breakpoint(medium down){
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 1.4;
     }
     @include breakpoint(small down){
         font-size: 16px;
-        line-height: 1.44;
     }
     cite{
         margin-top: 27px;

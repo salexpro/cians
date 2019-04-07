@@ -9,11 +9,8 @@ mixin quote(data)
                             span.subheader
                                 =data.sub
                 .cell.large-8.medium-8
-                    if typeof data.content == 'string'
-                        i.quote_italic
-                            =data.content
-                    else
-                        blockquote
-                            =data.content.quote
+                    blockquote.quote_italic
+                        =data.content.quote || data.content
+                        if data.content.cite
                             cite
                                 !=data.content.cite

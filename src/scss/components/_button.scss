@@ -20,10 +20,16 @@ button {
         letter-spacing: 2.4px;
         border-radius: 14px;
         min-width: auto;
+        &.secondary{
+            &:hover, &:focus{
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
     }
     &.small{
         letter-spacing: 3.14px;
-        min-width: 230px;
+        // min-width: 230px;
         padding-left: 0.8em;
         padding-right: 0.8em;
         @include breakpoint(medium down){

@@ -15,7 +15,8 @@
     &--header{
         justify-content: space-between;
         background: linear-gradient(to bottom, $white 50%, rgba(255,255,255,0.7) 75%, rgba(255,255,255,0) 100%);
-        padding: 52px 13px;
+        padding: 52px 0;
+        margin-left: -21px;
         @include breakpoint(medium down){
             z-index: 14;
             padding-top: 15px;
@@ -24,6 +25,7 @@
             top: 0;
             left: 0;
             width: 100%;
+            margin-left: 0;
             + .menu{
                 margin-top: 77px;
             }
@@ -155,10 +157,26 @@
         }
     }
     &--footer{
-        justify-content: space-around;
-        padding: 0 calc(((1140 - 950) / 2) * (100vw - 950px) / (1140 - 950) );
+        justify-content: space-between;
+        padding: 0 calc(((1140 - 1010) / 2) * (100vw - 1010px) / (1140 - 1010) );
+        @include breakpoint(small down){
+            justify-content: space-around;
+        }
         @media screen and (min-width: 1146px){
-            padding: 0 calc((1140px - 950px) / 2);
+            padding: 0 calc((1140px - 1010px) / 2);
+        }
+        li{
+            width: 33.33%;
+            text-align: center;
+            padding: 0 15px;
+            min-width: 162px;
+            @include breakpoint(medium down){
+                padding: 0;
+                width: calc(33.33% - 12px);
+            }
+        }
+        a, button{
+            display: inline-block;
         }
     }
     &--mobile{

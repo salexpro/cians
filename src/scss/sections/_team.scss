@@ -17,8 +17,10 @@
     &_header{
         color: $primary-color;
         margin-bottom: 34px;
+        margin-top: 5px;
         @include breakpoint(medium down){
             margin-bottom: 32px;
+            margin-top: 3px;
         }
         @include breakpoint(small down){
             background-color: rgba($light-gray, 0.8);
@@ -88,6 +90,9 @@
                 margin-left: 0;
                 margin-top: 14px;
                 font-style: italic;
+            }
+            li + li{
+                margin-top: 3px;
             }
         }
     }
