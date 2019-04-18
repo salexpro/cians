@@ -1,4 +1,5 @@
-/* 
+/* global svg4everybody */
+/*
 @codekit-prepend quiet '../../node_modules/jquery/dist/jquery.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.core.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min';
@@ -9,6 +10,7 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min';
+@codekit-prepend quiet '../../node_modules/svg4everybody/dist/svg4everybody.min.js'
 
 @codekit-append quiet 'components/_carousel.js'
 */
@@ -35,3 +37,5 @@ $('.menu--gray a').click(function (e) {
 $('.team_header').click(function() {
     $(this).toggleClass('is_open')
 })
+
+svg4everybody();

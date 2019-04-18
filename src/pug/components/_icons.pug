@@ -1,7 +1,4 @@
-svg(style="display:none")
-    defs
-        path#arrow(d='M425.857 1730.346l4.596 4.596-4.596 4.595' fill-opacity='0', stroke='#fff', stroke-miterlimit='50', transform='translate(-425 -1730)')
-        
-        g#close(fill-opacity='0' stroke-miterlimit='50' transform='translate(-863 -290)')
-            path(d='M863.433 290.94l12.74 12.74')
-            path(d='M876.173 290.94l-12.74 12.74')
+mixin icon(name, size, fill, viewbox, stroke)
+    - viewbox = viewbox || size
+    svg(xmlns='http://www.w3.org/2000/svg' width=size ? size[0] : false height=size ? size[1] : false viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : false)
+        use(fill=fill || false stroke=stroke xlink:href='./assets/img/sprite.svg#' + name)

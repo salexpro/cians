@@ -41,12 +41,6 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -217,6 +211,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/konva/konva.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/svg4everybody/dist/svg4everybody.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -531,6 +536,16 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/src/assets/img/sprite.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/sprite.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103252938751,
+		"prP": 0
 		},
 	"/src/assets/splash/launch-1125x2436.jpg": {
 		"ft": 16384,
@@ -1185,7 +1200,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 576356271.77525795
+	"lastBuiltDate": 577241962.00318694
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1197,7 +1212,7 @@
 	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigType": 0,
+	"babelConfigType": 2,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,

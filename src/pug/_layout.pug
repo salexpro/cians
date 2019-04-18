@@ -4,16 +4,12 @@ block const
     const descr  = 'Description';
     const domain = 'cians.salex.pro'
 
-mixin icon(name, size, fill, viewbox, stroke)
-    - viewbox = viewbox || size
-    svg(xmlns='http://www.w3.org/2000/svg' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
-        use(fill=fill stroke=stroke xlink:href='#' + name)
-
 //- Components
 include components/_menu
 include sections/_3col
 include sections/_leader
 include sections/_quote
+include components/_icons
 
 doctype html
 html(lang="ru")
@@ -27,4 +23,3 @@ html(lang="ru")
         include components/_offcanvas
         block js
             script(src="./js/app.min.js")
-        include components/_icons
