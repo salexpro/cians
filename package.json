@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/salexpro/foundation-boilerplate#readme",
   "dependencies": {
+    "caniuse-lite": "^1.0.30000962",
     "foundation-sites": "^6.5.1",
     "gsap": "^2.1.2",
     "jquery": "^3.3.1",
-    "konva": "^3.1.7",
+    "konva": "^3.2.5",
     "svg4everybody": "^2.1.9",
     "what-input": "^5.1.4"
   },
