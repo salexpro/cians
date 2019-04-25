@@ -16,7 +16,8 @@
 
 @font-face {
     font-family: 'Core Sans B 45';
-    src: url('../assets/fonts/CoreSans/CoreSansB45Medium.woff2') format('woff2'),
+    src: local('Core Sans B 45 Medium'),
+        url('../assets/fonts/CoreSans/CoreSansB45Medium.woff2') format('woff2'),
         url('../assets/fonts/CoreSans/CoreSansB45Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;

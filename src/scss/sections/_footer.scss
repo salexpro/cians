@@ -7,7 +7,7 @@
         padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));
     }
     @include breakpoint(small down){
-        padding: 0 24px 16px;
+        padding: 0 24px;
     }
     &_inner{
         max-width: 980px;
@@ -15,7 +15,7 @@
             margin: auto;
         }
         @include breakpoint(small down){
-            padding-top: 56px;
+            padding: 40px 0;
         }
     }
     &_cell{
@@ -55,11 +55,6 @@
             }
             @include breakpoint(small down){
                 font-size: 14px;
-                float: left;
-                + a {
-                    float: right;
-                    line-height: 1;
-                }
             }
         }
         a:not(.button){

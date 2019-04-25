@@ -94,16 +94,17 @@ const carousel = () => {
             width: 200,
             height: 40,
             text: labelsContent[i].toUpperCase(),
-            fontFamily: 'Verdana, Geneva, sans-serif',
+            fontFamily: '"Core Sans B 45", Geneva, sans-serif',
             fontSize: 13,
-            letterSpacing: 1.5,
+            fontStyle: '500',
+            letterSpacing: 2,
             fill: '#fff',
             align: 'center',
-            lineHeight: 1.25,
+            lineHeight: 1.2,
             verticalAlign: 'middle',
             offset: {
                 x: 100,
-                y: 20
+                y: 19
             },
         });
 
@@ -274,15 +275,17 @@ const carousel = () => {
     window.addEventListener('resize', fitStageIntoParentContainer);
 
 }
-if (document.querySelector('#carousel')) {
-    carousel();
-
-    $('.carousel_more').click(function (e) {
-        e.preventDefault();
-        const brief = $(`#carouselBrief${$(this).data('id')}`);
-
-        brief.addClass('is_expanded');
-
-        $($(this).attr('href')).addClass('is_active')
-    })
-}
+$(document).ready(() => {
+    if (document.querySelector('#carousel')) {
+        carousel();
+    
+        $('.carousel_more').click(function (e) {
+            e.preventDefault();
+            const brief = $(`#carouselBrief${$(this).data('id')}`);
+    
+            brief.addClass('is_expanded');
+    
+            $($(this).attr('href')).addClass('is_active')
+        })
+    }
+})

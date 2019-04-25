@@ -1,16 +1,11 @@
 .leader{
     margin-bottom: 65px;
     max-width: 980px;
-    &:not(.leader--wide){
-        margin-top: 22px;
-    }
     @include breakpoint(medium down){
         margin-bottom: 40px;
         padding: 0 63px;
         max-width: none;
-        &:not(.leader--wide){
-            margin-top: 8px;
-        }
+        margin-top: 8px;
     }
     @include breakpoint(768px down){
         padding: 0 calc(24px + (63 - 24) * (100vw - 640px) / (768 - 640));

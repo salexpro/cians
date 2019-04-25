@@ -23,17 +23,20 @@
             margin-top: 3px;
         }
         @include breakpoint(small down){
-            background-color: rgba($light-gray, 0.8);
-            margin: 0 -24px;
+            background-color: #35322f;
+            color: $white;
+            margin: 0;
             padding: 8px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
             font-size: 16px;
+            position: relative;
         }
         &::after{
             content: '';
-            background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2211%22%20viewBox%3D%220%200%2018%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M17%201L9%209L1%201%22%20stroke%3D%22%23235885%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E);
+            position: absolute;
+            right: 24px;
+            top: calc(50% - 4.5px);
+            background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2211%22%20viewBox%3D%220%200%2018%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M17%201L9%209L1%201%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E);
             background-size: 16px;
             background-repeat: no-repeat;
             width: 16px;
@@ -57,14 +60,13 @@
     &_item{
         & + & {
             @include breakpoint(small down){
-                margin-top: 16px;
+                margin-top: 6px;
             }
         }
     }
     &_persons{
         @include breakpoint(small down){
             display: none;
-            margin: 0 -24px;
             background: rgba($light-gray, 0.8);
             padding: 23px 24px 8px;
         }
@@ -84,15 +86,28 @@
         &_roles{
             color: $dark-gray;
             margin-top: 16px;
+            list-style: none;
             @include breakpoint(medium down){
-                font-size: 14px;
+                font-size: 15px;
                 list-style-position: inside;
                 margin-left: 0;
                 margin-top: 14px;
                 font-style: italic;
             }
-            li + li{
-                margin-top: 3px;
+            li{
+                &::before{
+                    display: inline-block;
+                    vertical-align: middle;
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    background: currentColor;
+                }
+                & + li{
+                    margin-top: 3px;
+                }
             }
         }
     }

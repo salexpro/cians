@@ -1,28 +1,31 @@
 .content{
-    @include breakpoint(medium down){
-        padding-top: 30px;
-    }
-    @include breakpoint(small down){
-        padding-top: 20px;
+    &_inner{
+        max-width: 950px;
+        margin: 22px auto 0;
+        padding-bottom: 74px;
+        @include breakpoint(medium down){
+            margin-top: 8px;
+            max-width: none;
+            padding: 0 51px 28px;
+        }
+        @include breakpoint(768px down){
+            padding: 0 calc(12px + (51 - 12) * (100vw - 640px) / (768 - 640)) 28px;
+        }
+        @include breakpoint(small down){
+            padding: 0 13px 28px;
+        }
     }
     &_text{
         margin: auto;
         margin-top: 56px;
-        font-size: 24px;
+        font-size: 17px;
         color: $dark-gray;
-        max-width: 950px;
         @include breakpoint(medium down){
-            max-width: none;
             margin-top: 40px;
-            padding: 0 51px;
             font-size: 16px;
-        }
-        @include breakpoint(768px down){
-            padding: 0 calc(12px + (51 - 12) * (100vw - 640px) / (768 - 640));
         }
         @include breakpoint(small down){
             margin-top: 32px;
-            padding: 0 13px;
-        }
+        }   
     }
 }
