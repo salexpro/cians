@@ -1,4 +1,4 @@
-/* global Konva */
+/* global Konva, Foundation */
 // @codekit-prepend quiet '../../../node_modules/konva/konva.min.js';
 // @codekit-prepend quiet '../../../node_modules/gsap/src/minified/TweenLite.min.js';
 // @codekit-prepend quiet '../../../node_modules/gsap/src/minified/TimelineMax.min.js';
@@ -104,7 +104,7 @@ const carousel = () => {
             verticalAlign: 'middle',
             offset: {
                 x: 100,
-                y: 19
+                y: Foundation.MediaQuery.atLeast('large') ? 19 : 20
             },
         });
 
